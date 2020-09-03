@@ -2,7 +2,7 @@
 version: "2"
 services:
   nextcloud:
-    image: irrxo35y.mirror.aliyuncs.com/linuxserver/nextcloud
+    image: hub-mirror.c.163.com/linuxserver/nextcloud
     container_name: nextcloud
     environment:
       - PUID=${PUID}
