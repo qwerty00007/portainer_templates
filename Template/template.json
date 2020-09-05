@@ -2166,21 +2166,51 @@
 					"name": "PGID"
 				},
 				{
+					"default": "Asia/Shanghai",
 					"label": "TZ",
 					"name": "TZ"
 				},
 				{
+					"default":"1234qwer",
 					"label": "DATABASE_PASSWORD",
 					"name": "DATABASE_PASSWORD"
 				},
 				{
+					"default":"1234qwer",
 					"label": "MYSQL_ROOT_PASSWORD",
 					"name": "MYSQL_ROOT_PASSWORD"
 				},
 				{
+					"default":"443",
 					"label": "PORT",
 					"name": "PORT"
+				},
+				{
+					"default":"/portainer/AppData/Nextcloud/Data",
+					"label": "Nextcloud_Data_Path",
+					"name": "Nextcloud_Data_Path"
+				},
+				{
+					"default":"/portainer/AppData/Nextcloud/Config",
+					"label": "Nextcloud_Config_Path",
+					"name": "Nextcloud_Config_Path"
+				},
+				{
+					"default":"/portainer/AppData/Mariadb/Config",
+					"label": "Mariadb_Config_Path",
+					"name": "Mariadb_Config_Path"
+				},
+				{
+					"default":"nextcloud_db",
+					"label": "MYSQL_DATABASE",
+					"name": "MYSQL_DATABASE"
+				},
+				{
+					"default":"nextcloud",
+					"label": "MYSQL_USER",
+					"name": "MYSQL_USER"
 				}
+
 			],
 			"logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/nextcloud-icon.png",
 			"name": "nextcloud",
