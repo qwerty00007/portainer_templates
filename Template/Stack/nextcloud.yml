@@ -17,7 +17,7 @@ services:
     depends_on:
       - nextcloud_db
   nextcloud_db:
-    image: linuxserver/mariadb
+    image: hub-mirror.c.163.com/linuxserver/mariadb
     container_name: nextcloud_db
     environment:
       - PUID=${PUID}
