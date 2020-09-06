@@ -28,6 +28,10 @@
 					"set": "-Xms256m -Xmx512m"
 				}
 			],
+			"labels": [
+				{ "name": "CODESERVER_CONFIG_PATH", "value": "/portainer/AppConfig/code-server/Config" },
+				{ "name": "PORTS", "value": "8443" }
+			],
 			"image": "linuxserver/airsonic:latest",
 			"logo": "https://raw.githubusercontent.com/qwerty00007/portainer_templates/master/Images/airsonic-logo.png",
 			"name": "airsonic",
