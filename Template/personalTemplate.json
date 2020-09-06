@@ -1,0 +1,220 @@
+{
+	"version": "2",
+	"templates": [
+        {
+			"categories": [
+				"Cloud"
+			],
+			"description": "Where are your photos and documents? With Nextcloud you pick a server of your choice, at home, in a data center or at a provider. And that is where your files will be. Nextcloud runs on that server, protecting your data and giving you access from your desktop or mobile devices.",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "100",
+					"label": "PGID",
+					"name": "PGID"
+				},
+				{
+					"default": "Asia/Shanghai",
+					"label": "TZ",
+					"name": "TZ"
+				},
+				{
+					"default":"1234qwer",
+					"label": "DATABASE_PASSWORD",
+					"name": "DATABASE_PASSWORD"
+				},
+				{
+					"default":"1234qwer",
+					"label": "MYSQL_ROOT_PASSWORD",
+					"name": "MYSQL_ROOT_PASSWORD"
+				},
+				{
+					"default":"443",
+					"label": "PORT",
+					"name": "PORT"
+				},
+				{
+					"default":"/portainer/AppData/Nextcloud/Data",
+					"label": "NEXTCLOUD_DATA_PATH",
+					"name": "NEXTCLOUD_DATA_PATH"
+				},
+				{
+					"default":"/portainer/AppConfig/Nextcloud/Config",
+					"label": "NEXTCLOUD_CONFIG_PATH",
+					"name": "NEXTCLOUD_CONFIG_PATH"
+				},
+				{
+					"default":"/portainer/AppConfig/Mariadb/Config",
+					"label": "MARIADB_CONFIG_PATH",
+					"name": "MARIADB_CONFIG_PATH"
+				},
+				{
+					"default":"nextcloud_db",
+					"label": "MYSQL_DATABASE",
+					"name": "MYSQL_DATABASE"
+				},
+				{
+					"default":"nextcloud",
+					"label": "MYSQL_USER",
+					"name": "MYSQL_USER"
+				}
+
+			],
+			"logo": "https://raw.githubusercontent.com/qwerty00007/portainer_templates/master/Images/nextcloud-icon.png",
+			"name": "nextcloud",
+			"note": "The database user is nextcloud and the database is nextcloud_db. The host of the database will be located at the bottom of the DB conotainer in portainer.",
+			"platform": "linux",
+			"repository": {
+				"stackfile": "Template/Stack/nextcloud.yml",
+				"url": "https://github.com/qwerty00007/portainer_templates"
+			},
+			"title": "Nextcloud",
+			"type": 3
+		},
+		{
+			"categories": [
+				"Tools"
+			],
+			"description": "Code-server is VS Code running on a remote server, accessible through the browser.",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "GUID"
+				},
+				{
+					"default": "Asia/Shanghai",
+					"label": "TZ",
+					"name": "TZ"
+				},
+				{
+					"default":"1234qwer",
+					"label": "PASSWORD",
+					"name": "PASSWORD"
+				},
+				{
+					"default":"1234qwer",
+					"label": "SUDO_PASSWORD",
+					"name": "SUDO_PASSWORD"
+				},
+				{
+					"default": "",
+					"label": "PROXY_DOMAIN",
+					"name": "PROXY_DOMAIN"
+				}
+			],
+			"registry":"hub-mirror.c.163.com",
+			"image": "linuxserver/code-server:latest",
+			"logo": "https://raw.githubusercontent.com/qwerty00007/portainer_templates/master/Images/code-server.png",
+			"name": "code-server",
+			"platform": "linux",
+			"ports": [
+				"8443:8443/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Code Server",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/AppConfig/code-server/Config",
+					"container": "/config"
+				}
+			]
+		},
+		{
+			"categories": [
+				"Books"
+			],
+			"description": "Calibre Web is a web app providing a clean interface for browsing, reading and downloading eBooks using an existing Calibre database.\n\n  [br][br]\n  [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]\n  [b]/config[/b] Where Calibre-web should store it's database[br]\n  [b]/books[/b] Path to your calibre library metadata.db file[br]",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "100",
+					"label": "PGID",
+					"name": "PGID"
+				}
+			],
+			"registry":"hub-mirror.c.163.com",
+			"image": "linuxserver/calibre-web:latest",
+			"logo": "https://raw.githubusercontent.com/qwerty00007/portainer_templates/master/Images/calibre-web-icon.png",
+			"name": "calibre-web",
+			"platform": "linux",
+			"ports": [
+				"8083:8083/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Calibre Web",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Books",
+					"container": "/books"
+				},
+				{
+					"bind": "/portainer/Files/AppData/Config/Calibre-web",
+					"container": "/config"
+				}
+			]
+		},
+		{
+			"categories": [
+				"Downloaders"
+			],
+			"description": "Transmission is designed for easy, powerful use. Transmission has the features you want from a BitTorrent client: encryption, a web interface, peer exchange, magnet links, DHT, µTP, UPnP and NAT-PMP port forwarding, webseed support, watch directories, tracker editing, global and per-torrent speed limits, and more.",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "100",
+					"label": "PGID",
+					"name": "PGID"
+				}
+			],
+			"image": "linuxserver/transmission:latest",
+			"logo": "https://raw.githubusercontent.com/qwerty00007/portainer_templates/master/Images/transmission-icon.png",
+			"name": "transmission",
+			"platform": "linux",
+			"ports": [
+				"9091:9091/tcp",
+				"51413:51413/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Transmission",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/Transmission",
+					"container": "/config"
+				},
+				{
+					"bind": "/portainer/Files/Downloads",
+					"container": "/downloads"
+				},
+				{
+					"container": "/watch"
+				}
+			]
+		}
+		
+			
+		
+
+
+    ]
+}
