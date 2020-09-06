@@ -224,7 +224,7 @@
 				}
             ],
 			"image": "fanningert/aria2-with-webui",
-			"logo": "https://raw.githubusercontent.com/qwerty00007/portainer_templates/master/Images/transmission-icon.png",
+			"logo": "https://raw.githubusercontent.com/qwerty00007/portainer_templates/master/Images/aria2-icon.png",
 			"name": "aria2",
 			"platform": "linux",
 			"ports": [
