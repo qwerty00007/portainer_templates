@@ -9,8 +9,8 @@ services:
       - PGID=${PGID}
       - TZ=${TZ}
     volumes:
-      - ${Nextcloud_Config_Path}:/config
-      - ${Nextcloud_Data_Path}:/data
+      - ${NEXTCLOUD_CONFIG_PATH}:/config
+      - ${NEXTCLOUD_DATA_PATH}:/data
     ports:
       - ${PORT}:443
     restart: unless-stopped
@@ -28,5 +28,6 @@ services:
       - MYSQL_USER=${MYSQL_USER}
       - MYSQL_PASSWORD=${DATABASE_PASSWORD}
     volumes:
-      - ${Mariadb_Config_Path}:/config
+      - ${MARIADB_CONFIG_PATH}:/config
     restart: unless-stopped
+    
