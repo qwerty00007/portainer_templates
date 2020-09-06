@@ -13,7 +13,7 @@
 					"name": "PUID"
 				},
 				{
-					"default": "1000",
+					"default": "100",
 					"label": "PGID",
 					"name": "PGID"
 				},
@@ -28,10 +28,7 @@
 					"set": "-Xms256m -Xmx512m"
 				}
 			],
-			"labels": [
-				{ "name": "CODESERVER_CONFIG_PATH", "value": "/portainer/AppConfig/code-server/Config" },
-				{ "name": "PORTS", "value": "8443" }
-			],
+			"registry":"hub-mirror.c.163.com"
 			"image": "linuxserver/airsonic:latest",
 			"logo": "https://raw.githubusercontent.com/qwerty00007/portainer_templates/master/Images/airsonic-logo.png",
 			"name": "airsonic",
