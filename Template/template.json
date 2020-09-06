@@ -28,7 +28,7 @@
 					"set": "-Xms256m -Xmx512m"
 				}
 			],
-			"registry":"hub-mirror.c.163.com"
+			"registry":"hub-mirror.c.163.com",
 			"image": "linuxserver/airsonic:latest",
 			"logo": "https://raw.githubusercontent.com/qwerty00007/portainer_templates/master/Images/airsonic-logo.png",
 			"name": "airsonic",
