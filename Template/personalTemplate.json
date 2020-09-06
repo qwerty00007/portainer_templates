@@ -210,9 +210,47 @@
 					"container": "/watch"
 				}
 			]
-		}
-		
-			
+        },
+        {
+            "categories": [
+				"Downloaders"
+			],
+			"description": "Aria2 download tool",
+			"env": [
+				{
+					"default": "YOUR_SECRET_CODE",
+					"label": "SECRET",
+					"name": "SECRET"
+				}
+            ],
+            "registry":"hub-mirror.c.163.com",
+			"image": "fanningert/unraid-aria2-with-webui",
+			"logo": "https://raw.githubusercontent.com/qwerty00007/portainer_templates/master/Images/transmission-icon.png",
+			"name": "aria2",
+			"platform": "linux",
+			"ports": [
+				"6800:6800/tcp",
+				"6880:6880/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "aria2",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/AppConfig/aria2/Conf",
+					"container": "/conf"
+				},
+				{
+					"bind": "/portainer/Files/Downloads",
+					"container": "/download"
+				},
+				{
+                    "bind":"/portainer/Files/finished",
+					"container": "/finished"
+				}
+			]
+
+        }
 		
 
 
