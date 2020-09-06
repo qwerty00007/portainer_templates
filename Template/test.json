@@ -1,0 +1,72 @@
+{
+    "Name": "Test Stack",
+    "RepositoryURL": "https://gitlab.michelin.com/docker4bsm/compose.git",
+    "ComposeFilePathInRepository": "docker-compose.yml",
+    "Env": [
+        {
+            "name": "app_tag_name",
+            "label": "app image",
+            "default": "17.1.2",
+            "preset": true,
+            "select": [
+                {
+                    "text": "latest",
+                    "value": "latest",
+                    "default": true
+                },
+                {
+                    "text": "<redacted>",
+                    "value": "<redacted>",
+                    "default": false
+                }
+            ],
+            "type": 3,
+            "value": "17.1.2"
+        },
+        {
+            "name": "db_tag_name",
+            "label": "db image",
+            "default": "defaultValue",
+            "preset": true,
+            "select": [
+                {
+                    "text": "<redacted>",
+                    "value": "<redacted>",
+                    "default": true
+                },
+                {
+                    "text": "<redacted>",
+                    "value": "<redacted>",
+                    "default": false
+                },
+                {
+                    "text": "<redacted>",
+                    "value": "<redacted>",
+                    "default": false
+                },
+                {
+                    "text": "latest",
+                    "value": "latest",
+                    "default": false
+                }
+            ],
+            "type": 3,
+            "value": "defaultValue"
+        },
+        {
+            "name": "mqm_tag_name",
+            "label": "mqm image",
+            "default": "latest",
+            "preset": true,
+            "select": [
+                {
+                    "text": "latest",
+                    "value": "latest",
+                    "default": true
+                }
+            ],
+            "type": 3,
+            "value": "latest"
+        }
+    ]
+}
