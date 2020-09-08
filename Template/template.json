@@ -3627,10 +3627,21 @@
 		},
 		{
 			"categories": [
-				"Other",
 				"Downloaders"
 			],
 			"description": "YoutubeDL-Material is a Material Design frontend for youtube-dl. It's coded using Angular 9 for the frontend, and Node.js on the backend.",
+			"env": [
+				{
+					"default": "1000",
+					"label": "UID",
+					"name": "UID"
+				},
+				{
+					"default": "100",
+					"label": "GID",
+					"name": "GID"
+				}
+			],
 			"image": "tzahi12345/youtubedl-material:latest",
 			"logo": "https://raw.githubusercontent.com/qwerty00007/portainer_templates/master/Images/ytdlm.png",
 			"name": "youtubedl-material",
