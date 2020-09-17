@@ -283,6 +283,7 @@
 					"name": "TZ"
 				}
 			],
+			"registry":"hub-mirror.c.163.com",
 			"image": "jlesage/handbrake:latest",
 			"logo": "https://raw.githubusercontent.com/qwerty00007/portainer_templates/master/Images/handbrake-icon.png",
 			"name": "handbrake",
