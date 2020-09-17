@@ -87,7 +87,7 @@
 					"name": "PUID"
 				},
 				{
-					"default": "1000",
+					"default": "100",
 					"label": "PUID",
 					"name": "GUID"
 				},
@@ -164,7 +164,7 @@
 					"container": "/books"
 				},
 				{
-					"bind": "/portainer/Files/AppData/Config/Calibre-web",
+					"bind": "/portainer/AppConfig/Calibre-web/Config",
 					"container": "/config"
 				}
 			]
@@ -199,11 +199,11 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/Transmission",
+					"bind": "/portainer/AppConfig/Transmission/Config",
 					"container": "/config"
 				},
 				{
-					"bind": "/portainer/Files/Downloads",
+					"bind": "/portainer/Downloads",
 					"container": "/downloads"
 				},
 				{
@@ -240,23 +240,23 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/YTDLM",
+					"bind": "/srv/dev-disk-by-id-ata-Hitachi_HTS547564A9E384_J2380053CXNZHC-part1/portainer/Files/AppData/Config/YTDLM",
 					"container": "/app/appdata"
 				},
 				{
-					"bind": "/portainer/Files/AppData/Youtube/Video",
+					"bind": "/srv/dev-disk-by-id-ata-Hitachi_HTS547564A9E384_J2380053CXNZHC-part1/portainer/Files/AppData/Youtube/Video",
 					"container": "/app/video"
 				},
 				{
-					"bind": "/portainer/Files/AppData/Youtube/Subscriptions",
+					"bind": "/srv/dev-disk-by-id-ata-Hitachi_HTS547564A9E384_J2380053CXNZHC-part1/portainer/Files/AppData/Youtube/Subscriptions",
 					"container": "/app/subscriptions"
 				},
 				{
-					"bind": "/portainer/Files/AppData/Youtube/Users",
+					"bind": "/srv/dev-disk-by-id-ata-Hitachi_HTS547564A9E384_J2380053CXNZHC-part1/portainer/Files/AppData/Youtube/Users",
 					"container": "/app/users"
 				},
 				{
-					"bind": "/portainer/Files/AppData/Youtube/Audio",
+					"bind": "/srv/dev-disk-by-id-ata-Hitachi_HTS547564A9E384_J2380053CXNZHC-part1/portainer/Files/AppData/Youtube/Audio",
 					"container": "/app/audio"
 				}
 			]
@@ -290,11 +290,11 @@
 					"container": "/conf"
 				},
 				{
-					"bind": "/portainer/Files/Downloads",
+					"bind": "/portainer/Downloading",
 					"container": "/download"
 				},
 				{
-					"bind":"/portainer/Files/finished",
+					"bind":"/portainer/finished",
 					"container": "/finished"
 				}
 			]
