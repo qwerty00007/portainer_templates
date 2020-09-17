@@ -261,45 +261,6 @@
 				}
 			]
 		},
-        {
-            "categories": [
-				"Downloaders"
-			],
-			"description": "Aria2 download tool",
-			"env": [
-				{
-					"default": "YOUR_SECRET_CODE",
-					"label": "SECRET",
-					"name": "SECRET"
-				}
-            ],
-			"image": "fanningert/aria2-with-webui",
-			"logo": "https://raw.githubusercontent.com/qwerty00007/portainer_templates/master/Images/aria2-icon.png",
-			"name": "aria2",
-			"platform": "linux",
-			"ports": [
-				"6800:6800/tcp",
-				"6880:6880/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "aria2",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/portainer/AppConfig/aria2/Conf",
-					"container": "/conf"
-				},
-				{
-					"bind": "/portainer/Downloading",
-					"container": "/download"
-				},
-				{
-					"bind":"/portainer/finished",
-					"container": "/finished"
-				}
-			]
-
-		},
 		{
 			"categories": [
 				"Tools"
@@ -327,7 +288,7 @@
 			"name": "handbrake",
 			"platform": "linux",
 			"ports": [
-				"5800:5890/tcp"
+				"5800:5800/tcp"
 			],
 			"restart_policy": "unless-stopped",
 			"title": "Handbrake",
@@ -346,10 +307,51 @@
 					"container":"/output"
 				}
 			]
+		},
+		{
+			"categories": [
+				"Downloaders"
+			],
+			"description": "Aria2 download tool",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "100",
+					"label": "PGID",
+					"name": "PGID"
+				},
+				{
+					"default": "1234qwer",
+					"label": "RPC_SECRET",
+					"name": "RPC_SECRET"
+				}
+			],
+			"image": "p3terx/aria2-pro",
+			"logo": "https://raw.githubusercontent.com/qwerty00007/portainer_templates/master/Images/aria2-icon.png",
+			"name": "aria2",
+			"platform": "linux",
+			"ports": [
+				"6800:6800/tcp",
+				"6880:6880/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "aria2",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/srv/dev-disk-by-id-ata-Hitachi_HTS547564A9E384_J2380053CXNZHC-part1/portainer/AppConfig/aria2/Config",
+					"container": "/config"
+				},
+				{
+					"bind": "/srv/dev-disk-by-id-ata-Hitachi_HTS547564A9E384_J2380053CXNZHC-part1/Downloading",
+					"container": "/downloads"
+				}
+			]
+	
 		}
-		
-		
-
-
     ]
 }
