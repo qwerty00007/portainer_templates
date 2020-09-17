@@ -334,15 +334,15 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppConfig/handbrake/config",
+					"bind": "/srv/dev-disk-by-id-ata-Hitachi_HTS547564A9E384_J2380053CXNZHC-part1/portainer/Files/AppConfig/handbrake/config",
 					"container": "/config"
 				},
 				{
-					"bind": "$HOME/handbrake/watch",
+					"bind": "/srv/dev-disk-by-id-ata-Hitachi_HTS547564A9E384_J2380053CXNZHC-part1/portainer/AppData/handbrake/watch",
 					"container": "/watch"
 				},
 				{
-					"bind":"$HOME/handbrake/output",
+					"bind":"/srv/dev-disk-by-id-ata-Hitachi_HTS547564A9E384_J2380053CXNZHC-part1/portainer/AppData/handbrake/output",
 					"container":"/output"
 				}
 			]
