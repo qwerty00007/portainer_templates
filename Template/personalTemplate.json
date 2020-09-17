@@ -348,7 +348,7 @@
 					"container": "/config"
 				},
 				{
-					"bind": "/srv/dev-disk-by-id-ata-Hitachi_HTS547564A9E384_J2380053CXNZHC-part1/Downloading",
+					"bind": "/srv/dev-disk-by-id-ata-Hitachi_HTS547564A9E384_J2380053CXNZHC-part1/downloads",
 					"container": "/downloads"
 				}
 			]
