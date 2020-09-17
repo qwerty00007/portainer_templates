@@ -38,17 +38,17 @@
 					"name": "PORT"
 				},
 				{
-					"default":"/portainer/AppData/Nextcloud/Data",
+					"default":"/srv/dev-disk-by-id-ata-Hitachi_HTS547564A9E384_J2380053CXNZHC-part1/portainer/AppData/Nextcloud/Data",
 					"label": "NEXTCLOUD_DATA_PATH",
 					"name": "NEXTCLOUD_DATA_PATH"
 				},
 				{
-					"default":"/portainer/AppConfig/Nextcloud/Config",
+					"default":"/srv/dev-disk-by-id-ata-Hitachi_HTS547564A9E384_J2380053CXNZHC-part1/portainer/AppConfig/Nextcloud/Config",
 					"label": "NEXTCLOUD_CONFIG_PATH",
 					"name": "NEXTCLOUD_CONFIG_PATH"
 				},
 				{
-					"default":"/portainer/AppConfig/Mariadb/Config",
+					"default":"/srv/dev-disk-by-id-ata-Hitachi_HTS547564A9E384_J2380053CXNZHC-part1/portainer/AppConfig/Mariadb/Config",
 					"label": "MARIADB_CONFIG_PATH",
 					"name": "MARIADB_CONFIG_PATH"
 				},
@@ -125,7 +125,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/AppConfig/code-server/Config",
+					"bind": "/srv/dev-disk-by-id-ata-Hitachi_HTS547564A9E384_J2380053CXNZHC-part1/portainer/AppConfig/code-server/Config",
 					"container": "/config"
 				}
 			]
@@ -160,11 +160,11 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Books",
+					"bind": "/srv/dev-disk-by-id-ata-Hitachi_HTS547564A9E384_J2380053CXNZHC-part1/books",
 					"container": "/books"
 				},
 				{
-					"bind": "/portainer/AppConfig/Calibre-web/Config",
+					"bind": "/srv/dev-disk-by-id-ata-Hitachi_HTS547564A9E384_J2380053CXNZHC-part1/portainer/AppConfig/Calibre-web/Config",
 					"container": "/config"
 				}
 			]
@@ -199,11 +199,11 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/AppConfig/Transmission/Config",
+					"bind": "/srv/dev-disk-by-id-ata-Hitachi_HTS547564A9E384_J2380053CXNZHC-part1/portainer/AppConfig/Transmission/Config",
 					"container": "/config"
 				},
 				{
-					"bind": "/portainer/Downloads",
+					"bind": "/srv/dev-disk-by-id-ata-Hitachi_HTS547564A9E384_J2380053CXNZHC-part1/downloads",
 					"container": "/downloads"
 				},
 				{
@@ -240,23 +240,23 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/srv/dev-disk-by-id-ata-Hitachi_HTS547564A9E384_J2380053CXNZHC-part1/portainer/Files/AppData/Config/YTDLM",
+					"bind": "/srv/dev-disk-by-id-ata-Hitachi_HTS547564A9E384_J2380053CXNZHC-part1/portainer/AppConfig/YTDLM",
 					"container": "/app/appdata"
 				},
 				{
-					"bind": "/srv/dev-disk-by-id-ata-Hitachi_HTS547564A9E384_J2380053CXNZHC-part1/portainer/Files/AppData/Youtube/Video",
+					"bind": "/srv/dev-disk-by-id-ata-Hitachi_HTS547564A9E384_J2380053CXNZHC-part1/portainer/AppData/Youtube/Video",
 					"container": "/app/video"
 				},
 				{
-					"bind": "/srv/dev-disk-by-id-ata-Hitachi_HTS547564A9E384_J2380053CXNZHC-part1/portainer/Files/AppData/Youtube/Subscriptions",
+					"bind": "/srv/dev-disk-by-id-ata-Hitachi_HTS547564A9E384_J2380053CXNZHC-part1/portainer/AppData/Youtube/Subscriptions",
 					"container": "/app/subscriptions"
 				},
 				{
-					"bind": "/srv/dev-disk-by-id-ata-Hitachi_HTS547564A9E384_J2380053CXNZHC-part1/portainer/Files/AppData/Youtube/Users",
+					"bind": "/srv/dev-disk-by-id-ata-Hitachi_HTS547564A9E384_J2380053CXNZHC-part1/portainer/AppData/Youtube/Users",
 					"container": "/app/users"
 				},
 				{
-					"bind": "/srv/dev-disk-by-id-ata-Hitachi_HTS547564A9E384_J2380053CXNZHC-part1/portainer/Files/AppData/Youtube/Audio",
+					"bind": "/srv/dev-disk-by-id-ata-Hitachi_HTS547564A9E384_J2380053CXNZHC-part1/portainer/AppData/Youtube/Audio",
 					"container": "/app/audio"
 				}
 			]
@@ -296,7 +296,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/srv/dev-disk-by-id-ata-Hitachi_HTS547564A9E384_J2380053CXNZHC-part1/portainer/Files/AppConfig/handbrake/config",
+					"bind": "/srv/dev-disk-by-id-ata-Hitachi_HTS547564A9E384_J2380053CXNZHC-part1/portainer/AppConfig/handbrake/config",
 					"container": "/config"
 				},
 				{
