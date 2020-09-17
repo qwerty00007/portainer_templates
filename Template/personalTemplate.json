@@ -299,7 +299,55 @@
 				}
 			]
 
-        }
+		},
+		{
+			"categories": [
+				"Tools"
+			],
+			"description": "This is a Docker container for HandBrake.",
+			"env": [
+				{
+					"default": "1000",
+					"label": "USER_ID",
+					"name": "USER_ID"
+				},
+				{
+					"default":"100",
+					"label": "GROUP_ID",
+					"name": "GROUP_ID"
+				},
+				{
+					"default":"Asia/Shanghai",
+					"label": "TZ",
+					"name": "TZ"
+				}
+			],
+			"image": "jlesage/handbrake:latest",
+			"logo": "https://raw.githubusercontent.com/qwerty00007/portainer_templates/master/Images/handbrake-icon.png",
+			"name": "handbrake",
+			"platform": "linux",
+			"ports": [
+				"5800:5890/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Handbrake",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppConfig/handbrake/config",
+					"container": "/config"
+				},
+				{
+					"bind": "$HOME/handbrake/watch",
+					"container": "/watch"
+				},
+				{
+					"bind":"$HOME/handbrake/output",
+					"container":"/output"
+				}
+			]
+		}
+		
 		
 
 
