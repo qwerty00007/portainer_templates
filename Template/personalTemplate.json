@@ -402,6 +402,7 @@
 				}
 			],
 			"logo": "https://raw.githubusercontent.com/qwerty00007/portainer_templates/master/Images/bookstack2.png",
+			"name":"bookstack",
 			"note": "Default login is admin@admin.com with a password of password. The database created is called bookstackapp and the database user is called bookstack",
 			"platform": "linux",
 			"repository": {
