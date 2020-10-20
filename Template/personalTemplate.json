@@ -132,6 +132,22 @@
 		},
 		{
 			"categories": [
+				"Tools"
+			],
+			"description": "draw.io (formerly Diagramly) is free online diagram software. You can use it as a flowchart maker, network diagram software, to create UML online, as an ER diagram tool, to design database schema, to build BPMN online, as a circuit diagram maker, and more. draw.io can import .vsdx, Gliffy™ and Lucidchart™ files.",
+			"image": "jgraph/drawio:latest",
+			"logo": "https://raw.githubusercontent.com/qwerty00007/portainer_templates/master/Images/code-server.png",
+			"name": "draw.io",
+			"platform": "linux",
+			"ports": [
+				"8080:8080/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "draw.io",
+			"type": 1
+		},
+		{
+			"categories": [
 				"Books"
 			],
 			"description": "Calibre Web is a web app providing a clean interface for browsing, reading and downloading eBooks using an existing Calibre database.\n\n  [br][br]\n  [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]\n  [b]/config[/b] Where Calibre-web should store it's database[br]\n  [b]/books[/b] Path to your calibre library metadata.db file[br]",
